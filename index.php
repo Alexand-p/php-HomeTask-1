@@ -17,3 +17,5 @@ if(isset($_FILES) && isset($_FILES['uploadedFile'])){
      }
 }
     $html = include_once 'index.html';
+
+//проверяем git
