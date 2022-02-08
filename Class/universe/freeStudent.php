@@ -11,5 +11,5 @@ class freeStudent extends Student
 
   protected bool $scholarship = true;
 
-  
+
 }
