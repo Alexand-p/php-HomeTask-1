@@ -1,6 +1,6 @@
 <?php
 
-class Student
+class Student implements StudentInterface
 {
 
     /**
@@ -43,12 +43,7 @@ class Student
     /**
      * @return void
      */
-    public function printStudent()
-    {
-        echo $this->name;
-        echo $this->age;
-        echo $this->gender;
-    }
+
 
     function missedLesson()
     {

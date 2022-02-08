@@ -10,6 +10,6 @@ class Anna extends freeStudent
 
  public int $age = 21;
 
-
+ public string $gender = 'women';
 
 }

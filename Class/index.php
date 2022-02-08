@@ -8,9 +8,11 @@ require_once 'universe/paidStudent.php';
 
 $student = new Student();
 $alex = new Alex();
+$anna = new Anna();
 $free = new freeStudent();
 
 echo $alex -> gender;
 echo $free ->passedExam;
+
 
 
