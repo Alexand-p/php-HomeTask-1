@@ -8,8 +8,8 @@ if(isset($_FILES) && isset($_FILES['uploadedFile'])){
          $tmpName = $fileData['tmp_name'];
          $destinationPath = $uploadsDir . $fileName;
          if(move_uploaded_file($tmpName, $destinationPath)){
-             $new_url='./redirect_page/redirect.html';
-             header('Location: '.$new_url);
+             $url='./redirect_page/redirect.html';
+             header('Location: '.$url);
          }
          else{
              echo  'ERROR:cant upload file';
