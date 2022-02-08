@@ -4,7 +4,7 @@ class Student implements StudentInterface
 {
 
     /**
-     *
+     * @var string 
      */
     public string $name;
 
@@ -13,9 +13,7 @@ class Student implements StudentInterface
      */
     public int $age;
 
-    /**
-     *
-     */
+
     public string $gender ;
 
     /**
@@ -45,21 +43,22 @@ class Student implements StudentInterface
      */
 
 
-    function missedLesson()
+    public function missedLesson()
     {
 
     }
 
-    function paidEducation()
+    public function paidEducation() : bool
     {
         if (($this->missedHours === 0 && $this->passedExam === true)) {
             $this->freeEducation = true;
         } else {
             $this->freeEducation = false;
         }
+        return $this->freeEducation;
     }
 
-    function resultExam()
+    public function resultExam()
     {
         echo $this->passedExam;
     }
