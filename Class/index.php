@@ -1,11 +1,16 @@
 <?php
-class Student{
-    public $age = 14;
-    public $name = 'Alex';
-    public function printData()
-    {
-        echo $this->name;
-        echo $this->age;
-    }
-}
-echo  'printData';
+
+require_once 'universe/Student.php';
+require_once 'universe/Alex.php';
+require_once 'universe/freeStudent.php';
+require_once 'universe/paidStudent.php';
+
+
+$student = new Student();
+$alex = new Alex();
+$free = new freeStudent();
+
+echo $alex -> gender;
+echo $free ->passedExam;
+
+
