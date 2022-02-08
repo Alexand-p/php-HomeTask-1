@@ -1,4 +1,5 @@
 <?php
+
 $uploadsDir = './downloads/';
 if(isset($_FILES) && isset($_FILES['uploadedFile'])){
      $fileData = $_FILES['uploadedFile'];
@@ -17,6 +18,7 @@ if(isset($_FILES) && isset($_FILES['uploadedFile'])){
      }
 }
     $html = include_once 'index.html';
-    $redirect_html = include_once 'redirect_page/redirect.html';
+    $redirect_html = include 'redirect_page/redirect.html';
+
 
 
