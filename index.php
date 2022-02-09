@@ -1,5 +1,4 @@
 <?php
-
 $uploadsDir = './downloads/';
 if(isset($_FILES) && isset($_FILES['uploadedFile'])){
      $fileData = $_FILES['uploadedFile'];
@@ -8,8 +7,9 @@ if(isset($_FILES) && isset($_FILES['uploadedFile'])){
          $tmpName = $fileData['tmp_name'];
          $destinationPath = $uploadsDir . $fileName;
          if(move_uploaded_file($tmpName, $destinationPath)){
-             $url='./redirect_page/redirect.html';
-             header('Location: '.$url);
+             header('Refresh: 2; url=http://learn/titel.php');
+             echo "Привет!Через 2 секунд вас переместит  на страницу с фотографиями ))";
+
          }
          else{
              echo  'ERROR:cant upload file';
@@ -18,7 +18,6 @@ if(isset($_FILES) && isset($_FILES['uploadedFile'])){
      }
 }
     $html = include_once 'index.html';
-    $redirect_html = include 'redirect_page/redirect.html';
 
 
 
