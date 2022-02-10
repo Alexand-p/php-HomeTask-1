@@ -12,4 +12,8 @@ class Anna extends freeStudent
 
  public string $gender = 'women';
 
+    public function getName():string
+    {
+        return $this->name;
+    }
 }

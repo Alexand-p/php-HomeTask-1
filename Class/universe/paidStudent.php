@@ -2,8 +2,9 @@
 
 require_once 'Student.php';
 
-class paidStudent extends Student
+abstract class paidStudent extends Student
 {
+    public abstract function getName():string;
     /**
      * @var bool
      */

@@ -11,5 +11,9 @@ class Alex extends paidStudent
 
    public int $age = 22;
 
+    public function getName(): string
+    {
+        return $this->name;
+    }
 }
 

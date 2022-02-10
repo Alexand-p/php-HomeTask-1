@@ -6,15 +6,15 @@ class Student implements StudentInterface
     /**
      * @var string 
      */
-    public string $name;
+//    public string $name;
 
     /**
      * @var int
      */
-    public int $age;
+//    public int $age;
 
 
-    public string $gender ;
+    public static string $gender ;
 
     /**
      * @var int
@@ -30,7 +30,7 @@ class Student implements StudentInterface
     /**
      * @var bool
      */
-    public bool $isActivist;
+    protected bool $isActivist;
 
     /**
      * @var bool
@@ -58,7 +58,7 @@ class Student implements StudentInterface
         return $this->freeEducation;
     }
 
-    public function resultExam()
+    public function resultExam() : bool
     {
         echo $this->passedExam;
     }

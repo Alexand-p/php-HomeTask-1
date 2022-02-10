@@ -1,8 +1,10 @@
 <?php
 
 
-class freeStudent extends Student
+abstract class freeStudent extends Student
 {
+ public abstract function getName():string;
+
 
     /**
      * @var int
