@@ -23,7 +23,7 @@ while ($file = readdir($dirHandle))
     if(in_array($ext,$imageType))
     {
         echo '<div class = "img-container" >
-                <img src="'.$dir.'/'.$file.'" class="png" title="'.$file.'"  alt="#" style="margin-top: 10px"/>
+                <img src="'.$dir.'/'.$file.'"  alt="#" title="'.$file.'" class="png"  style="margin-top: 10px"/>
             </div>';
         $i++;
     }
