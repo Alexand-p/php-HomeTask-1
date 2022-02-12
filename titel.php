@@ -1,6 +1,6 @@
 <?php
 
-$imageType=["jpg", "png", "gif", "jpeg"];
+$imageType=["jpg", "png", "gif", "jpeg","JPG"];
 $dir = "downloads";
 $fileParts = [];
 $ext='';
