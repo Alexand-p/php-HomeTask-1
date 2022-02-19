@@ -1,5 +1,7 @@
+.gitignore
 /downloads
 /Part_3
 /Composer
 /Home_1
 /Wrong
+.idea
