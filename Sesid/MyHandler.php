@@ -1,6 +1,6 @@
 <?php
 
-class MyHandler implements  SessionHandlerInterface
+class MyHandler implements SessionHandlerInterface
 {
     public function open($path, $name)
     {
@@ -20,21 +20,21 @@ class MyHandler implements  SessionHandlerInterface
 //        $a = unserialize($data); (выводит ошибку ансериализации)
         $open = fopen("./Session/sesid_$id.json", "w");
         $setJsonFile = json_encode($_SESSION, JSON_UNESCAPED_UNICODE);
-        fwrite($open,$setJsonFile);
+        fwrite($open, $setJsonFile);
         fclose($open);
         return true;
 
     }
 
-    public function close():bool
+    public function close(): bool
     {
         return true;
     }
 
     public function destroy($id)
     {
-        if(file_exists("./Session/sesif_$id.json")){
-            dele("./Session/sesid_$id.json");
+        if (file_exists("./Session/sesif_$id.json")) {
+            unlink("./Session/sesid_$id.json");
             return true;
         }
     }

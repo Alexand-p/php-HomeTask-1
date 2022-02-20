@@ -1,0 +1,15 @@
+{
+    "name": "savchenko/test-ibby",
+    "type": "project",
+    "require": {
+        "savchenko/test-ibby": "dev-master",
+        "alexandp/test": "dev-master"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Savchenko\\TestIbby\\": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
