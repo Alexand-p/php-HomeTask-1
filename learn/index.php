@@ -1,5 +1,4 @@
 <?php
-<?php
 
 /**
  * ******* spieFeed's license. *******
